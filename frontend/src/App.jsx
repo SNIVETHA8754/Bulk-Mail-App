@@ -33,7 +33,8 @@ function App() {
   function send()
   {
     setStatus(true)
-    axios.post("http://localhost:3000/sendemail",{msg:msg, emailList:emailList})
+    axios.post("https://bulk-mail-app-bs2f.onrender.com/sendemail", { msg, emailList })
+
     .then(function(data){
       if(data.data === true)
       {
