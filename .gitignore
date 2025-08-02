@@ -1,0 +1,21 @@
+# Sensitive files
+.env
+
+# Node modules
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and debug
+*.log
+npm-debug.log*
+
+# Runtime files
+dist/
+build/
+
+# OS-specific
+.idea/
+.vscode/
