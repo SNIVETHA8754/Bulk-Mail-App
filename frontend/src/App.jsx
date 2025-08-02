@@ -33,7 +33,7 @@ function App() {
   function send()
   {
     setStatus(true)
-    axios.post("https://bulk-mail-app-bs2f.onrender.com/sendemail", { msg, emailList })
+   axios.post(`${process.env.REACT_APP_API_URL}/sendemail`, { msg, emailList })
 
     .then(function(data){
       if(data.data === true)
